@@ -1,0 +1,23 @@
+.products__title {
+  padding: 0 20px;
+
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  color: $base-black;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 42px;
+    line-height: 64px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 40px;
+  }
+}
+
+.products__pagination {
+  display: flex;
+  gap: 20px;
+}

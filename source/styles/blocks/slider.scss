@@ -1,0 +1,56 @@
+.slider__slide--flat-white {
+  background-color: $slide-flat-white;
+}
+
+.slider__slide--lavender-latte {
+  background-color: $slide-lavender-latte;
+}
+
+.slider__slide--espresso {
+  background-color: $slide-espresso;
+}
+
+.slider__title {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: $base-black;
+  text-transform: capitalize;
+
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 56px;
+    line-height: 80px;
+  }
+}
+
+.slider__description {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: $base-black;
+
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.slider__old-price {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color: $accent-color;
+}
+
+.slider__new-price {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  color: $base-black;
+}
