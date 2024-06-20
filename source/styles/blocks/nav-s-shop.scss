@@ -1,0 +1,17 @@
+.nav-e-shop__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-e-shop__title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $accent-color;
+}
+
+.nav-e-shop__link {
+  padding: 8px 0;
+}
