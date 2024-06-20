@@ -1,5 +1,17 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+.header--wrapper {
+  display: flex;
+  background-color: $base-white;
+  color: #1a1818;
+}
+
+.header__logos {
+  padding: 12px 20px;
+
+  @media (min-width: $tablet) {
+    padding: 22px 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 22px 40px;
+  }
 }

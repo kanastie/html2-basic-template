@@ -1,0 +1,38 @@
+.pagination__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: $accent-color;
+
+  background-color: $base-white;
+
+  &--current {
+    font-weight: 600;
+    color: $base-black;
+
+    background-color: transparent;
+    cursor: default;
+    border-radius: 4px;
+  }
+}
+
+.pagination__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 15px;
+
+  background-color: $base-white;
+  border: none;
+  border-radius: 4px;
+}
