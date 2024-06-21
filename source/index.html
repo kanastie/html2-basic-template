@@ -300,7 +300,11 @@
         </ul>
       </section>
 
-      <section class="products" id="catalog" data-test="catalog">
+      <section
+        class="products products--wrapper"
+        id="catalog"
+        data-test="catalog"
+      >
         <span class="products__badge badge">Каталог</span>
         <h2 class="products__title">Каталог кофейных напитков</h2>
 
@@ -441,42 +445,39 @@
 
         <ul class="products__list">
           <li class="products__item product">
+            <picture class="product__images">
+              <img
+                class="product__img"
+                src="./images/catalog/coffee-can-1.png"
+                srcset="./images/catalog/coffee-can-1@2x.png 2x"
+                srcset="./images/catalog/coffee-can-1@3x.png 3x"
+                width="130"
+                height="188"
+                alt="Фото продукта"
+              />
+            </picture>
             <a href="" class="product__link">
-              <picture>
-                <img
-                  class="product__img"
-                  src="./images/catalog/coffee-can-1.png"
-                  srcset="./images/catalog/coffee-can-1@2x.png 2x"
-                  srcset="./images/catalog/coffee-can-1@3x.png 3x"
-                  width="130"
-                  height="188"
-                  alt="Фото продукта"
-                />
-              </picture>
               <h3 class="product__title">Декаф Флэт Уайт</h3>
             </a>
             <p class="product__description">
               Кофе без кофеина из Эфиопии с натуральным фермерским молоком
             </p>
             <span class="product__price">225₽</span>
-            <button class="product__buy button">
-              <span class="button__icon"></span>
-              В корзину
-            </button>
+            <button class="product__buy button">В корзину</button>
           </li>
           <li class="products__item product">
+            <picture class="product__images">
+              <img
+                class="product__img"
+                src="./images/catalog/coffee-can-2.png"
+                srcset="./images/catalog/coffee-can-2@2x.png 2x"
+                srcset="./images/catalog/coffee-can-2@3x.png 3x"
+                width="130"
+                height="188"
+                alt="Фото продукта"
+              />
+            </picture>
             <a href="" class="product__link">
-              <picture>
-                <img
-                  class="product__img"
-                  src="./images/catalog/coffee-can-2.png"
-                  srcset="./images/catalog/coffee-can-2@2x.png 2x"
-                  srcset="./images/catalog/coffee-can-2@3x.png 3x"
-                  width="130"
-                  height="188"
-                  alt="Фото продукта"
-                />
-              </picture>
               <h3 class="product__title">Декаф Флэт Уайт</h3>
             </a>
             <p class="product__description">
@@ -488,41 +489,18 @@
             </button>
           </li>
           <li class="products__item product">
+            <picture class="product__images">
+              <img
+                class="product__img"
+                src="./images/catalog/coffee-can-3.png"
+                srcset="./images/catalog/coffee-can-3@2x.png 2x"
+                srcset="./images/catalog/coffee-can-3@3x.png 3x"
+                width="130"
+                height="188"
+                alt="Фото продукта"
+              />
+            </picture>
             <a href="" class="product__link">
-              <picture>
-                <img
-                  class="product__img"
-                  src="./images/catalog/coffee-can-3.png"
-                  srcset="./images/catalog/coffee-can-3@2x.png 2x"
-                  srcset="./images/catalog/coffee-can-3@3x.png 3x"
-                  width="130"
-                  height="188"
-                  alt="Фото продукта"
-                />
-              </picture>
-              <h3 class="product__title">Декаф Флэт Уайт</h3>
-              <p class="product__description">
-                Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-              </p>
-              <span class="product__price">225₽</span
-              ><button class="product__buy button">
-                <span class="button__icon"></span>В корзину
-              </button></a
-            >
-          </li>
-          <li class="products__item product">
-            <a href="" class="product__link">
-              <picture>
-                <img
-                  class="product__img"
-                  src="./images/catalog/coffee-can-4.png"
-                  srcset="./images/catalog/coffee-can-4@2x.png 2x"
-                  srcset="./images/catalog/coffee-can-4@3x.png 3x"
-                  width="130"
-                  height="188"
-                  alt="Фото продукта"
-                />
-              </picture>
               <h3 class="product__title">Декаф Флэт Уайт</h3>
             </a>
             <p class="product__description">
@@ -534,18 +512,18 @@
             </button>
           </li>
           <li class="products__item product">
+            <picture class="product__images">
+              <img
+                class="product__img"
+                src="./images/catalog/coffee-can-4.png"
+                srcset="./images/catalog/coffee-can-4@2x.png 2x"
+                srcset="./images/catalog/coffee-can-4@3x.png 3x"
+                width="130"
+                height="188"
+                alt="Фото продукта"
+              />
+            </picture>
             <a href="" class="product__link">
-              <picture>
-                <img
-                  class="product__img"
-                  src="./images/catalog/coffee-can-5.png"
-                  srcset="./images/catalog/coffee-can-5@2x.png 2x"
-                  srcset="./images/catalog/coffee-can-5@3x.png 3x"
-                  width="130"
-                  height="188"
-                  alt="Фото продукта"
-                />
-              </picture>
               <h3 class="product__title">Декаф Флэт Уайт</h3>
             </a>
             <p class="product__description">
@@ -557,18 +535,41 @@
             </button>
           </li>
           <li class="products__item product">
+            <picture class="product__images">
+              <img
+                class="product__img"
+                src="./images/catalog/coffee-can-5.png"
+                srcset="./images/catalog/coffee-can-5@2x.png 2x"
+                srcset="./images/catalog/coffee-can-5@3x.png 3x"
+                width="130"
+                height="188"
+                alt="Фото продукта"
+              />
+            </picture>
             <a href="" class="product__link">
-              <picture>
-                <img
-                  class="product__img"
-                  src="./images/catalog/coffee-can-6.png"
-                  srcset="./images/catalog/coffee-can-6@2x.png 2x"
-                  srcset="./images/catalog/coffee-can-6@3x.png 3x"
-                  width="130"
-                  height="188"
-                  alt="Фото продукта"
-                />
-              </picture>
+              <h3 class="product__title">Декаф Флэт Уайт</h3>
+            </a>
+            <p class="product__description">
+              Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+            </p>
+            <span class="product__price">225₽</span
+            ><button class="product__buy button">
+              <span class="button__icon"></span>В корзину
+            </button>
+          </li>
+          <li class="products__item product">
+            <picture class="product__images">
+              <img
+                class="product__img"
+                src="./images/catalog/coffee-can-6.png"
+                srcset="./images/catalog/coffee-can-6@2x.png 2x"
+                srcset="./images/catalog/coffee-can-6@3x.png 3x"
+                width="130"
+                height="188"
+                alt="Фото продукта"
+              />
+            </picture>
+            <a href="" class="product__link">
               <h3 class="product__title">Декаф Флэт Уайт</h3>
             </a>
             <p class="product__description">
@@ -582,7 +583,22 @@
         </ul>
 
         <ul class="products__pagination pagination">
-          <button class="pagination__button pagination__button--prev"></button>
+          <button class="pagination__button pagination__button--prev">
+            <svg
+              width="6"
+              height="10"
+              viewBox="0 0 6 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.80847 -5.20835e-08L6 1.23899L2.38306 5L6 8.76101L4.80847 10L-2.18557e-07 5L4.80847 -5.20835e-08Z"
+                fill="#7859CF"
+              />
+            </svg>
+          </button>
           <li class="pagination__item">
             <a href="" class="pagination__link">1</a>
           </li>
@@ -592,7 +608,22 @@
           <li class="pagination__item">
             <a href="" class="pagination__link">3</a>
           </li>
-          <button class="pagination__button pagination__button--next"></button>
+          <button class="pagination__button pagination__button--next">
+            <svg
+              width="6"
+              height="10"
+              viewBox="0 0 6 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1.19153 -5.20835e-08L5.41581e-08 1.23899L3.61694 5L3.82956e-07 8.76101L1.19153 10L6 5L1.19153 -5.20835e-08Z"
+                fill="#7859CF"
+              />
+            </svg>
+          </button>
         </ul>
       </section>
 
