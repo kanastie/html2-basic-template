@@ -1,0 +1,35 @@
+.copyright--wrapper {
+  display: flex;
+  padding: 20px 30px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    margin: 0 auto 40px;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    bottom: 0%;
+    right: 50%;
+  }
+}
+
+.copyright__text {
+  margin: 0;
+  margin-right: 3px;
+
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $base-grey;
+}
+
+.copyright__link:hover path,
+.copyright__link:focus path {
+  fill: $accent-color-lighter;
+}
+
+.copyright__link:active path {
+  fill: $accent-color-darker;
+}

@@ -1,11 +1,27 @@
 .nav-e-shop__list {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  gap: 4px;
+
+  border-bottom: 1px solid $accent-secondary;
+
+  @media (min-width: $tablet) {
+    width: 223px;
+    padding: 0;
+    border: none;
+  }
+
+  @media (min-width: $desktop) {
+    width: 317px;
+  }
 }
 
 .nav-e-shop__title {
+  margin: 0;
+  margin-bottom: 8px;
+
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
@@ -13,5 +29,21 @@
 }
 
 .nav-e-shop__link {
+  display: inline-block;
   padding: 8px 0;
+
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: $base-black;
+  text-transform: uppercase;
+}
+
+.nav-e-shop__link:hover,
+.nav-e-shop__link:focus {
+  color: $accent-color-lighter;
+}
+
+.nav-e-shop__link:active {
+  color: $accent-color-darker;
 }
