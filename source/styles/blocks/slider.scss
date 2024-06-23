@@ -1,3 +1,72 @@
+.slider {
+  position: relative;
+}
+
+.slider__button {
+  position: absolute;
+  width: 20px;
+  height: 659px;
+
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    width: 80px;
+    height: 666px;
+  }
+
+  @media (min-width: $tablet) {
+    height: 718px;
+  }
+}
+
+.slider-button-prev {
+  top: 0;
+  left: 0;
+  background-image: url("../../icons/slide_stroke.svg");
+  background-size: 11px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-button-prev:hover,
+.slider-button-prev:focus {
+  background: linear-gradient($base-white, $base-white);
+}
+
+.slider-button-prev:active {
+  background: linear-gradient(
+    90deg,
+    rgba(120, 89, 207, 0.25) 0%,
+    rgba(120, 89, 207, 0) 100%
+  );
+}
+
+.slider-button-next {
+  top: 0;
+  right: 0;
+  background-image: url("../../icons/slide_stroke.svg");
+  background-size: 11px 20px;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+  background-position: center;
+}
+
+.slider-button-next:hover,
+.slider-button-next:focus {
+  background: linear-gradient($base-white, $base-white);
+}
+
+.slider-button-next:active {
+  background: linear-gradient(
+    -90deg,
+    rgba(120, 89, 207, 0.25) 0%,
+    rgba(120, 89, 207, 0) 100%
+  );
+}
+
 .slider__slide--flat-white {
   background-color: $slide-flat-white;
 
