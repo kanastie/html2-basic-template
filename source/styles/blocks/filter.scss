@@ -1,12 +1,43 @@
+.filter--wrapper {
+  @media (min-width: $tablet) {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+  }
+}
+
 .filter__group {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
   border: none;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .filter__title {
+  margin-bottom: 20px;
+
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
   color: $base-black;
+}
+
+.filter__price {
+  display: flex;
+  gap: 44px;
+
+  @media (min-width: $tablet) {
+    gap: 48px;
+  }
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -39,15 +70,89 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
+.filter__list {
+  padding: 0;
+  margin: 0;
+}
+
+.filter__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.filter-buttons {
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.button-reset {
+  color: $accent-color;
+  background-color: $base-white;
+}
+
+.button-submit:hover,
+.button-submit:focus {
+  background-color: $accent-color-lighter;
+}
+
+.button-submit:active {
+  background-color: $accent-color-darker;
+}
+
+.button-submit:disabled {
+  background-color: $base-grey;
+}
+
+.button-reset:hover,
+.button-reset:focus {
+  color: $base-white;
+  background-color: $accent-color-lighter;
+}
+
+.button-reset:active {
+  color: $base-white;
+  background-color: $accent-color-darker;
+}
+
+.button-reset:disabled {
+  color: $base-white;
+  background-color: $grey-lighter;
+}
+
 .filter__sorting {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    margin-left: auto;
+    margin-bottom: 26px;
+  }
+}
+
+.filter__sorting-title {
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
   color: $base-black;
 }
 
+select {
+  appearance: none;
+}
+
 .filter__select {
   padding: 4px 30px 4px 10px;
+  width: 165px;
 
   font-size: 16px;
   line-height: 24px;

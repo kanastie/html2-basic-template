@@ -313,120 +313,124 @@
           action="https://echo.htmlacademy.ru"
           class="products__filter filter"
         >
-          <fieldset class="filter__group">
-            <legend class="filter__title">Цена</legend>
-            <div class="filter__range-scale">
-              <div class="filter__range-bar"></div>
-            </div>
-            <label for="">
-              <input
-                class="filter__input"
-                name="price-min"
-                type="number"
-                placeholder="0"
-              />
-            </label>
-            <span>-</span>
-            <label for="">
-              <input
-                class="filter__input"
-                name="price-max"
-                type="number"
-                value="900"
-              />
-            </label>
-          </fieldset>
+          <div class="filter--wrapper">
+            <fieldset class="filter__group">
+              <legend class="filter__title">Цена</legend>
+              <div class="filter__range-scale">
+                <div class="filter__range-bar"></div>
+              </div>
 
-          <fieldset class="filter__group">
-            <legend class="filter__title">Наличие молока</legend>
-            <ul class="filter__list">
-              <li class="filter__item">
-                <label for=""
-                  ><input
-                    name="milk"
-                    value="nomatter"
-                    type="radio"
-                    checked
-                  />Неважно</label
-                >
-              </li>
-              <li class="filter__item">
-                <label for=""
-                  ><input name="milk" value="animal" type="radio" />Только
-                  животное</label
-                >
-              </li>
-              <li class="filter__item">
-                <label for=""
-                  ><input name="milk" value="vegan" type="radio" />Только
-                  растительное</label
-                >
-              </li>
-              <li class="filter__item">
-                <label for=""
-                  ><input
-                    name="milk"
-                    value="without"
-                    type="radio"
-                    disabled
-                  />Без молока</label
-                >
-              </li>
-            </ul>
-          </fieldset>
+              <div class="filter__price">
+                <label for="">
+                  <input
+                    class="filter__input"
+                    name="price-min"
+                    type="number"
+                    placeholder="0"
+                  />
+                </label>
+                <label for="">
+                  <input
+                    class="filter__input"
+                    name="price-max"
+                    type="number"
+                    value="900"
+                  />
+                </label>
+              </div>
+            </fieldset>
 
-          <fieldset class="filter__group">
-            <legend class="filter__title">Страна произрастания</legend>
-            <ul class="filter__list">
-              <li class="filter__item">
-                <label for=""
-                  ><input
-                    name="origin"
-                    value="brasil"
-                    type="checkbox"
-                    checked
-                  />Бразилия</label
-                >
-              </li>
-              <li class="filter__item">
-                <label for=""
-                  ><input
-                    name="origin"
-                    value="ethiopia"
-                    type="checkbox"
-                  />Эфиопия</label
-                >
-              </li>
-              <li class="filter__item">
-                <label for=""
-                  ><input
-                    name="origin"
-                    value="colombia"
-                    type="checkbox"
-                  />Колумбия</label
-                >
-              </li>
-              <li class="filter__item">
-                <label for=""
-                  ><input
-                    name="origin"
-                    value="costarica"
-                    type="checkbox"
-                  />Коста-Рика</label
-                >
-              </li>
-              <li class="filter__item">
-                <label for=""
-                  ><input
-                    name="origin"
-                    value="peru"
-                    type="checkbox"
-                    disabled
-                  />Перу</label
-                >
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="filter__group">
+              <legend class="filter__title">Наличие молока</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <label for=""
+                    ><input
+                      name="milk"
+                      value="nomatter"
+                      type="radio"
+                      checked
+                    />Неважно</label
+                  >
+                </li>
+                <li class="filter__item">
+                  <label for=""
+                    ><input name="milk" value="animal" type="radio" />Только
+                    животное</label
+                  >
+                </li>
+                <li class="filter__item">
+                  <label for=""
+                    ><input name="milk" value="vegan" type="radio" />Только
+                    растительное</label
+                  >
+                </li>
+                <li class="filter__item">
+                  <label for=""
+                    ><input
+                      name="milk"
+                      value="without"
+                      type="radio"
+                      disabled
+                    />Без молока</label
+                  >
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="filter__group">
+              <legend class="filter__title">Страна произрастания</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <label for=""
+                    ><input
+                      name="origin"
+                      value="brasil"
+                      type="checkbox"
+                      checked
+                    />Бразилия</label
+                  >
+                </li>
+                <li class="filter__item">
+                  <label for=""
+                    ><input
+                      name="origin"
+                      value="ethiopia"
+                      type="checkbox"
+                    />Эфиопия</label
+                  >
+                </li>
+                <li class="filter__item">
+                  <label for=""
+                    ><input
+                      name="origin"
+                      value="colombia"
+                      type="checkbox"
+                    />Колумбия</label
+                  >
+                </li>
+                <li class="filter__item">
+                  <label for=""
+                    ><input
+                      name="origin"
+                      value="costarica"
+                      type="checkbox"
+                    />Коста-Рика</label
+                  >
+                </li>
+                <li class="filter__item">
+                  <label for=""
+                    ><input
+                      name="origin"
+                      value="peru"
+                      type="checkbox"
+                      disabled
+                    />Перу</label
+                  >
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
           <div class="filter-buttons">
             <button class="button button-submit" type="submit">
@@ -436,12 +440,14 @@
           </div>
         </form>
 
-        <span class="filter__sorting">Сортировка:</span>
-        <select class="filter__select" name="" id="">
-          <option value="sort-default" selected>По умолчанию</option>
-          <option value="sort-cheap">Сначала дешёвые</option>
-          <option value="sort-expensive">Сначала дорогие</option>
-        </select>
+        <div class="filter__sorting">
+          <span class="filter__sorting-title">Сортировка:</span>
+          <select class="filter__select" name="" id="">
+            <option value="sort-default" selected>По умолчанию</option>
+            <option value="sort-cheap">Сначала дешёвые</option>
+            <option value="sort-expensive">Сначала дорогие</option>
+          </select>
+        </div>
 
         <ul class="products__list">
           <li class="products__item product">
