@@ -1,16 +1,160 @@
+.slider {
+  position: relative;
+}
+
+.slider__button {
+  position: absolute;
+  width: 20px;
+  height: 659px;
+
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    width: 80px;
+    height: 642px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 718px;
+  }
+}
+
+.slider-button-prev {
+  top: 0;
+  left: 0;
+  background-image: url("../../icons/slide_stroke.svg");
+  background-size: 11px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-button-prev:hover,
+.slider-button-prev:focus {
+   background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+
+}
+
+.slider-button-prev:active {
+  background: linear-gradient(
+    90deg,
+    rgba(120, 89, 207, 0.25) 0%,
+    rgba(120, 89, 207, 0) 100%
+  );
+}
+
+.slider-button-next {
+  top: 0;
+  right: 0;
+  background-image: url("../../icons/slide_stroke.svg");
+  background-size: 11px 20px;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+  background-position: center;
+}
+
+.slider-button-next:hover,
+.slider-button-next:focus {
+  background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+
+}
+
+.slider-button-next:active {
+  background: linear-gradient(
+    90deg,
+    rgba(120, 89, 207, 0.25) 0%,
+    rgba(120, 89, 207, 0) 100%
+  );
+}
+
 .slider__slide--flat-white {
   background-color: $slide-flat-white;
+
+  @media (min-width: $tablet) {
+    background: linear-gradient($slide-flat-white 77%, $base-white 77%);
+  }
+
+  @media (min-width: $desktop) {
+    background: linear-gradient($slide-flat-white, $slide-flat-white);
+  }
 }
 
 .slider__slide--lavender-latte {
   background-color: $slide-lavender-latte;
+
+  @media (min-width: $tablet) {
+    background: linear-gradient($slide-lavender-latte 77%, $base-white 77%);
+  }
+
+  @media (min-width: $desktop) {
+    background: linear-gradient($slide-lavender-latte, $slide-lavender-latte);
+  }
 }
 
 .slider__slide--espresso {
   background-color: $slide-espresso;
+
+  @media (min-width: $tablet) {
+    background: linear-gradient($slide-espresso 77%, $base-white 77%);
+  }
+
+  @media (min-width: $desktop) {
+    background: linear-gradient($slide-espresso, $slide-espresso);
+  }
+}
+
+.slider__slide {
+  padding: 20px 20px 60px;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    padding: 60px 80px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 30px 80px 84px 105px;
+
+    display: grid;
+    grid-template-columns: 600px auto;
+    grid-template-rows: 1fr auto auto 1fr;
+    gap: 0 30px;
+    justify-items: start;
+  }
+}
+
+.slider__badge {
+  @media (min-width: $desktop) {
+    padding-right: 551px;
+    align-self: end;
+  }
+}
+
+.slider__images {
+  margin-bottom: 10px;
+  order: -1;
+
+  place-self: center;
+
+  @media (min-width: $tablet) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+
+    margin-bottom: 0;
+  }
 }
 
 .slider__title {
+  margin: 0;
+  margin-bottom: 10px;
+
   font-size: 36px;
   line-height: 48px;
   font-weight: 700;
@@ -18,30 +162,53 @@
   color: $base-black;
   text-transform: capitalize;
 
-  margin: 0;
-
   @media (min-width: $tablet) {
+    margin-bottom: 16px;
+
     font-size: 56px;
     line-height: 80px;
   }
 }
 
 .slider__description {
+  margin: 0;
+  margin-bottom: 20px;
+
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   text-align: center;
   color: $base-black;
 
-  margin: 0;
-
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 32px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 40px;
+
+    text-align: left;
+  }
+}
+
+.slider__order {
+  width: fit-content;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 395px;
+  }
 }
 
 .slider__old-price {
+  padding: 0;
+  margin-right: 3px;
+
   font-size: 16px;
   line-height: 32px;
   font-weight: 400;
@@ -49,6 +216,8 @@
 }
 
 .slider__new-price {
+  margin-right: 14px;
+
   font-size: 20px;
   line-height: 32px;
   font-weight: 600;

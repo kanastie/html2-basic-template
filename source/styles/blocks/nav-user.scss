@@ -1,0 +1,73 @@
+.nav-user__icon {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  background-color: $base-white;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    height: 80px;
+  }
+
+  &:active {
+    background-color: $accent-secondary;
+  }
+}
+
+.nav-user__icon:focus svg path {
+  fill: $accent-color;
+}
+
+.nav-user__icon svg {
+  padding: 22px;
+
+  @media (min-width: $tablet) {
+    padding: 32px 22px;
+  }
+}
+
+.nav-user__icon--user {
+  margin-right: -4px;
+
+  @media (min-width: $desktop) {
+    width: 112px;
+
+    &::after {
+      content: "Войти";
+      position: relative;
+      display: inline-block;
+
+      top: -37px;
+      left: -14px;
+
+      font-family: $Montserrat;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 500;
+      color: $base-black;
+    }
+  }
+}
+
+.nav-user__icon--basket {
+  @media (min-width: $desktop) {
+    width: 129px;
+
+    &::after {
+      content: "Корзина";
+      position: relative;
+      display: inline-block;
+
+      top: -37px;
+      left: -14px;
+      font-family: $Montserrat;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 500;
+      color: $base-black;
+    }
+  }
+}

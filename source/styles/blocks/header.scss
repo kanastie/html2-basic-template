@@ -1,17 +1,72 @@
 .header--wrapper {
   display: flex;
+  justify-content: space-between;
   background-color: $base-white;
   color: #1a1818;
 }
 
 .header__logos {
+  width: 32px;
+  height: 36px;
   padding: 12px 20px;
 
   @media (min-width: $tablet) {
     padding: 22px 20px;
+    margin-right: 67px;
   }
 
   @media (min-width: $desktop) {
     padding: 22px 40px;
+    margin-right: 308px;
   }
+}
+
+.header__logos-link {
+  @media (min-width: $desktop) {
+    &::after {
+      content: "Интернет-магазин кофейных напитков";
+      position: relative;
+      display: block;
+      width: 136px;
+      top: -37px;
+      left: 170px;
+      margin-left: 20px;
+
+      font-family: $Montserrat;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 400;
+      color: $base-black;
+    }
+  }
+}
+
+.header__user-nav {
+  height: 60px;
+  margin: 0 0 0 auto;
+
+  @media (min-width: $tablet) {
+    height: 80px;
+    margin-left: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    gap: 20px;
+    margin-left: 162px;
+  }
+}
+
+.header__nav {
+  height: 60px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    order: -1;
+  }
+}
+
+.header__nav--wrapper {
+  display: flex;
 }

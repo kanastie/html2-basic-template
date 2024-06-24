@@ -13,6 +13,8 @@
   color: $accent-color;
 
   background-color: $base-white;
+  border-radius: 4px;
+  box-sizing: border-box;
 
   &--current {
     font-weight: 600;
@@ -22,6 +24,24 @@
     cursor: default;
     border-radius: 4px;
   }
+}
+
+.pagination__link:hover,
+.pagination__link:focus {
+  color: $base-white;
+  background-color: $accent-color-lighter;
+}
+
+.pagination__link:active {
+  color: $base-white;
+  background-color: $accent-color-darker;
+}
+
+.pagination__link--current:active,
+.pagination__link--current:hover,
+.pagination__link--current:focus {
+  color: $base-black;
+  background-color: transparent;
 }
 
 .pagination__button {
@@ -35,4 +55,23 @@
   background-color: $base-white;
   border: none;
   border-radius: 4px;
+}
+
+.pagination__button:hover,
+.pagination__button:focus {
+  background-color: $accent-color-lighter;
+}
+
+.pagination__button:active {
+  background-color: $accent-color-darker;
+}
+
+.pagination__button:disabled {
+  background-color: $grey-lighter;
+}
+
+.pagination__button:active path,
+.pagination__button:hover path,
+.pagination__button:focus path {
+  fill: $base-white;
 }

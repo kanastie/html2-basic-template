@@ -1,25 +1,89 @@
+.product__images {
+  grid-column: 1/-1;
+  place-self: center;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
+}
+
+.product__link {
+  grid-column: 1/-1;
+}
+
 .product__title {
+  margin: 0;
+  margin-bottom: 4px;
+
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
   color: $base-black;
 
   @media (min-width: $tablet) {
+    margin-bottom: 10px;
+
     font-size: 24px;
     line-height: 36px;
   }
 }
 
 .product__description {
+  grid-column: 1/-1;
+  margin: 0;
+  margin-bottom: 16px;
+
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   color: $base-black;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
 }
 
 .product__price {
+  grid-column: 1/2;
+  align-self: center;
+
   font-size: 20px;
   line-height: 32px;
   font-weight: 600;
   color: $base-black;
+}
+
+.product__buy {
+  justify-self: end;
+  position: relative;
+  width: 141px;
+  padding-left: 45px;
+
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.product__buy::after {
+  content: "";
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: 25%;
+  left: 20px;
+  background-image: url("../../icons/basket_plus.svg");
+}
+
+.product__buy:hover,
+.product__buy:focus {
+  background-color: $accent-color-lighter;
+}
+
+.product__buy:active {
+  background-color: $accent-color-darker;
+}
+
+.product__buy:disabled {
+  background-color: $bg-grey;
 }
