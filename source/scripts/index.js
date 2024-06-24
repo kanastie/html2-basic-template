@@ -15,7 +15,6 @@ navToggle.addEventListener('click', () => {
   }
 });
 
-
 /* Слайдер */
 
 const slider = document.querySelector('.slider');
@@ -24,6 +23,7 @@ const nextButton = slider.querySelector('.slider-button-next');
 const slides = Array.from(slider.querySelectorAll('.slider__slide'));
 const slideCount = slides.length;
 let slideIndex = 0;
+const screen = window.innerWidth;
 
 prevButton.addEventListener('click', showPreviousSlide);
 nextButton.addEventListener('click', showNextSlide);
@@ -41,7 +41,11 @@ function showNextSlide() {
 function updateSlider() {
   slides.forEach((slide, index) => {
     if (index === slideIndex) {
-      slide.style.display = 'flex';
+      if (screen >= 1440) {
+        slide.style.display = 'grid';
+      } else {
+        slide.style.display = 'flex';
+      }
     } else {
       slide.style.display = 'none';
     }

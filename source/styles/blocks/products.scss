@@ -80,6 +80,10 @@
   padding-bottom: 44px;
   background-color: $bg-grey;
 
+  @media (min-width: $tablet) {
+    padding: 100px 20px 90px;
+  }
+
   @media (min-width: $desktop) {
     padding: 100px 40px 120px;
 

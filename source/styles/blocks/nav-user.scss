@@ -30,6 +30,8 @@
 }
 
 .nav-user__icon--user {
+  margin-right: -4px;
+
   @media (min-width: $desktop) {
     width: 112px;
 

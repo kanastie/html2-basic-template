@@ -31,6 +31,24 @@
   color: $base-black;
 }
 
+.filter__range-scale {
+  padding: 0 20px;
+  margin-bottom: 24px;
+  width: 280px;
+  height: 24px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    margin-bottom: 20px;
+    width: 223px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 22px;
+    width: 318px;
+  }
+}
+
 .filter__price {
   display: flex;
   gap: 44px;
@@ -131,6 +149,12 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
   gap: 8px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    margin-left: auto;
+  width: fit-content;
+  }
 
   @media (min-width: $desktop) {
     padding: 0;

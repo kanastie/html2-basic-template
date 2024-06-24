@@ -45,7 +45,11 @@
   @media (min-width: $tablet) {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px 30px;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 0 30px;
   }
 }
 
@@ -53,12 +57,10 @@
   position: relative;
 
   @media (min-width: $tablet) {
-    margin-bottom: 50px;
     width: 339px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 0;
     width: 317px;
   }
 }

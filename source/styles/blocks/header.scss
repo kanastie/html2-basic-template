@@ -58,9 +58,15 @@
 }
 
 .header__nav {
+  height: 60px;
+
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     order: -1;
   }
+}
+
+.header__nav--wrapper {
+  display: flex;
 }

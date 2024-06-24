@@ -14,10 +14,10 @@
 
   @media (min-width: $tablet) {
     width: 80px;
-    height: 666px;
+    height: 642px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     height: 718px;
   }
 }
@@ -33,7 +33,8 @@
 
 .slider-button-prev:hover,
 .slider-button-prev:focus {
-  background: linear-gradient($base-white, $base-white);
+   background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+
 }
 
 .slider-button-prev:active {
@@ -56,12 +57,13 @@
 
 .slider-button-next:hover,
 .slider-button-next:focus {
-  background: linear-gradient($base-white, $base-white);
+  background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+
 }
 
 .slider-button-next:active {
   background: linear-gradient(
-    -90deg,
+    90deg,
     rgba(120, 89, 207, 0.25) 0%,
     rgba(120, 89, 207, 0) 100%
   );
@@ -133,10 +135,12 @@
 
 .slider__images {
   margin-bottom: 10px;
+  order: -1;
 
   place-self: center;
 
   @media (min-width: $tablet) {
+    order: 1;
   }
 
   @media (min-width: $desktop) {
@@ -196,7 +200,7 @@
     margin-bottom: 20px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     padding-right: 395px;
   }
 }
